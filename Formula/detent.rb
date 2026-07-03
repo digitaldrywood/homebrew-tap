@@ -5,21 +5,21 @@
 class Detent < Formula
   desc "Agent orchestrator for tracker-backed work queues"
   homepage "https://github.com/digitaldrywood/detent"
-  version "0.20.1"
+  version "0.21.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/digitaldrywood/detent/releases/download/v0.20.1/detent_0.20.1_darwin_amd64.tar.gz"
-      sha256 "e6bdde1e61487f188747fd43595862cfe4c6d09d8198027a2988c4f158167953"
+      url "https://github.com/digitaldrywood/detent/releases/download/v0.21.0/detent_0.21.0_darwin_amd64.tar.gz"
+      sha256 "2e8a40f0d1e332e779451fd1d7cb087598a51a3bfc72db18a089b2ef6f3f9f39"
 
       define_method(:install) do
         bin.install "detent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/digitaldrywood/detent/releases/download/v0.20.1/detent_0.20.1_darwin_arm64.tar.gz"
-      sha256 "3d1038f5344f73f45f40d3060d175491674e0a398d880670c6d22f9e4192b0e0"
+      url "https://github.com/digitaldrywood/detent/releases/download/v0.21.0/detent_0.21.0_darwin_arm64.tar.gz"
+      sha256 "fed6774c14a288727fd7fe93238fe3d87641fa6c717eac96b3b466b50471176a"
 
       define_method(:install) do
         bin.install "detent"
@@ -29,15 +29,15 @@ class Detent < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/digitaldrywood/detent/releases/download/v0.20.1/detent_0.20.1_linux_amd64.tar.gz"
-      sha256 "b6bae42edf7783240629646905af7fa86a2131ef798fd473b35dd451bff7fa5d"
+      url "https://github.com/digitaldrywood/detent/releases/download/v0.21.0/detent_0.21.0_linux_amd64.tar.gz"
+      sha256 "f7e0ced3c12f0464ab590d4b60c938a9762490ce8753e01465ed3eb7992cdae5"
       define_method(:install) do
         bin.install "detent"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/digitaldrywood/detent/releases/download/v0.20.1/detent_0.20.1_linux_arm64.tar.gz"
-      sha256 "37465e6923015c7b6540f0041059bbea146916146cfaeb1ed0663ee9d06bdb3d"
+      url "https://github.com/digitaldrywood/detent/releases/download/v0.21.0/detent_0.21.0_linux_arm64.tar.gz"
+      sha256 "6246795073430e44b123a7567c20261bb47c58440329e00c6bb6a19fe9b3835e"
       define_method(:install) do
         bin.install "detent"
       end
